@@ -66,6 +66,6 @@
 
 <!-- Custom Updater -->
 <remove-project name="Lunaris-AOSP/packages_apps_Updater" />
-<project name="Rexons-AOSP-Projects/lunaris_packages_apps_Updater" path="packages/apps/Updater" remote="github" revision="master" />
+<project name="Rexons-AOSP-Projects/lunaris_packages_apps_Updater" path="packages/apps/Updater" remote="github" revision="16" />
     
 </manifest>
