@@ -7,7 +7,7 @@
 <remote name="rexons-aosp" fetch="https://github.com/Rexons-AOSP-Projects" />
     
 <!-- Device Sources -->
-<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tapas-playground" revision="16" />
+<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="rexons-aosp" revision="axion-dt" />
 <project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="tapas-playground" revision="16" />
 <project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="tapas-playground" revision="16-gki" />
 
