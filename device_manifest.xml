@@ -60,7 +60,7 @@
 <project path="hardware/qcom-caf/sm6225/media" name="android_hardware_qcom-caf_sm6225_media" remote="tapas-playground" revision="16.2" />
 
 <!-- Dolby & MiCam -->
-<project path="hardware/dolby" name="android_hardware_dolby" remote="tapas-playground" revision="lunaris" />
+<project path="hardware/dolby" name="android_hardware_dolby" remote="rexons-aosp" revision="lunaris" />
 <project path="device/xiaomi/tapas-miuicamera" name="android_device_xiaomi_tapas-miuicamera" remote="tapas-playground-ssh" revision="16" />
 <project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="tapas-playground-gitlab" revision="16" />
 
