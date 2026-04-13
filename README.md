@@ -2,7 +2,7 @@
 ### 1. Generate the SSH Key
 
 ```bash
-ssh-keygen -t ed25519 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "raniv2057@gmail.com"
 ```
 
 ### 2. Add the Key to the SSH Agent
