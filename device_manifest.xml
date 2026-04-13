@@ -4,7 +4,7 @@
 <remote name="tapas-playground" fetch="https://github.com/SM6225-Android-Playground" />
 <remote name="tapas-playground-ssh" fetch="git@github.com:SM6225-Android-Playground" />
 <remote name="tapas-playground-gitlab" fetch="https://gitlab.com/Masood-J" />
-<remote name="rexons-aosp" fetch="https://github.com/Rexons-AOSP-Projects" />
+<remote name="rexons-aosp" fetch="git@github.com:Rexons-AOSP-Projects" />
     
 <!-- Device Sources -->
 <project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="rexons-aosp" revision="axion-dt" />
