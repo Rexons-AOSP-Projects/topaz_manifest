@@ -13,7 +13,7 @@
 
 
 <!-- LOS Hardware Stuff -->
-<project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="tapas-playground" revision="lineage-23.2" />
+<project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="rexons-aosp" revision="lineage-23.2" />
 <remove-project path="hardware/qcom-caf/common" />
 <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="tapas-playground" revision="16" >
     <!-- add guard for AOSP hardware/qcom dir -->
