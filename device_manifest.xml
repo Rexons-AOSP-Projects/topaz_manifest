@@ -66,6 +66,6 @@
 
 <!-- Custom Updater -->
 <remove-project name="packages_apps_Updater" />
-<project name="evolution_packages_apps_Updater" path="packages/apps/Updater" remote="rexons-aosp" revision="main" />
+<project name="evolution_packages_apps_Updater" path="packages/apps/Updater" remote="rexons-aosp" revision="bq2" />
     
 </manifest>
