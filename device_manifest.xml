@@ -65,6 +65,6 @@
 <project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="tapas-playground-gitlab" revision="16" />
 
 <remove-project name="packages_apps_Updater" />
-  <project name="infinityx_packages_apps_Updater" path="packages/apps/Updater" remote="rexons-aosp" revision="main" />
+  <project name="infinityx_packages_apps_Updater" path="packages/apps/Updater" remote="rexons-aosp" revision="15" />
     
 </manifest>
