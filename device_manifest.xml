@@ -65,7 +65,7 @@
 <project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="tapas-playground-gitlab" revision="16" />
 
 <!-- Custom Updater -->
-<remove-project name="packages/apps/Updater" />
+<remove-project name="packages_apps_Updater" />
 <project name="evolution_packages_apps_Updater" path="packages/apps/Updater" remote="rexons-aosp" revision="main" />
     
 </manifest>
