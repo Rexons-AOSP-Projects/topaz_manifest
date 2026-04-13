@@ -4,6 +4,7 @@
 <remote name="tapas-playground" fetch="https://github.com/SM6225-Android-Playground" />
 <remote name="tapas-playground-ssh" fetch="git@github.com:SM6225-Android-Playground" />
 <remote name="tapas-playground-gitlab" fetch="https://gitlab.com/Masood-J" />
+<remote name="rexons-aosp" fetch="https://github.com/Rexons-AOSP-Projects" />
     
 <!-- Device Sources -->
 <project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tapas-playground" revision="16" />
@@ -62,5 +63,9 @@
 <project path="hardware/dolby" name="android_hardware_dolby" remote="tapas-playground" revision="lunaris" />
 <project path="device/xiaomi/tapas-miuicamera" name="android_device_xiaomi_tapas-miuicamera" remote="tapas-playground-ssh" revision="16" />
 <project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="tapas-playground-gitlab" revision="16" />
+
+<!-- Custom Updater -->
+<remove-project name="packages/apps/Updater" />
+<project name="infinityx_packages_apps_Updater" path="packages/apps/Updater" remote="rexons-aosp" revision="main" />
     
 </manifest>
