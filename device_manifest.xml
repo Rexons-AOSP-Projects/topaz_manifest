@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="tapas-playground" fetch="https://github.com/SM6225-Android-Playground" />
+<remote name="tapas-playground-ssh" fetch="git@github.com:SM6225-Android-Playground" />
+<remote name="tapas-playground-gitlab" fetch="https://gitlab.com/Masood-J" />
+    
+<!-- Device Sources -->
+<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tapas-playground" revision="16" />
+<project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="tapas-playground" revision="16" />
+<project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="tapas-playground" revision="16-gki" />
+
+
+<!-- LOS Hardware Stuff -->
+<project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="tapas-playground" revision="lineage-23.2" />
+<remove-project path="hardware/qcom-caf/common" />
+<project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="tapas-playground" revision="16" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm6225/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm6225/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm6225/Android.mk" />
+  </project>
+<!-- SE-Policy Stuff -->
+<project name="android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr/sm6225" remote="tapas-playground" revision="16.2" />
+<project name="android_device_xiaomi_sepolicy" path="device/xiaomi/sepolicy" remote="tapas-playground-ssh" revision="16" />
+
+<!-- HALS -->
+<project path="hardware/qcom-caf/sm6225/audio/agm" name="android_hardware_qcom-caf_sm6225_audio_agm" remote="tapas-playground" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/audio/pal" name="android_hardware_qcom-caf_sm6225_audio_pal" remote="tapas-playground" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="android_hardware_qcom-caf_sm6225_audio_primary-hal" remote="tapas-playground" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/dataipa" name="android_hardware_qcom-caf_sm6225_dataipa" remote="tapas-playground" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="android_hardware_qcom-caf_sm6225_data-ipa-cfg-mgr" remote="tapas-playground" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/display" name="android_hardware_qcom-caf_sm6225_display" remote="tapas-playground" revision="16.2" />
+<project path="hardware/qcom-caf/sm6225/media" name="android_hardware_qcom-caf_sm6225_media" remote="tapas-playground" revision="16.2" />
+
+<!-- Dolby & MiCam -->
+<project path="hardware/dolby" name="android_hardware_dolby" remote="tapas-playground" revision="lunaris" />
+<project path="device/xiaomi/tapas-miuicamera" name="android_device_xiaomi_tapas-miuicamera" remote="tapas-playground-ssh" revision="16" />
+<project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="tapas-playground-gitlab" revision="16" />
+    
+</manifest>
