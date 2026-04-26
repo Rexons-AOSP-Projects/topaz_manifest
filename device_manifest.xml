@@ -7,7 +7,7 @@
 <remote name="rexons-aosp" fetch="git@github.com:Rexons-AOSP-Projects" />
     
 <!-- Device Sources -->
-<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="rexons-aosp" revision="lunaris-dt" />
+<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="rexons-aosp" revision="mist-dt" />
 <project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="tapas-playground" revision="16" />
 <project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="tapas-playground" revision="16-gki" />
 
@@ -65,7 +65,7 @@
 <project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="tapas-playground-gitlab" revision="16" />
 
 <!-- Custom Updater -->
-<remove-project name="Lunaris-AOSP/packages_apps_Updater" />
-<project name="Rexons-AOSP-Projects/lunaris_packages_apps_Updater" path="packages/apps/Updater" remote="github" revision="16" />
+<remove-project name="Project-Mist-OS/packages_apps_Updater" />
+<project name="Rexons-AOSP-Projects/mist_packages_apps_Updater" path="packages/apps/Updater" remote="github" revision="16.2" />
     
 </manifest>
