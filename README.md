@@ -50,6 +50,11 @@ git clone git@github.com:Rexons-AOSP-Projects/topaz_manifest.git -b axion .repo/
 git clone git@github.com:Rexons-AOSP-Projects/topaz_manifest.git -b lunaris .repo/local_manifests
 ```
 
+**For Mist:**
+```bash
+git clone git@github.com:Rexons-AOSP-Projects/topaz_manifest.git -b mist .repo/local_manifests
+```
+
 **For Evolution:**
 ```bash
 git clone git@github.com:Rexons-AOSP-Projects/topaz_manifest.git -b evolution .repo/local_manifests
