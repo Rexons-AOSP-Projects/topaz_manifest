@@ -4,6 +4,7 @@
 <remote name="tapas-playground" fetch="https://github.com/SM6225-Android-Playground" />
 <remote name="tapas-playground-ssh" fetch="git@github.com:SM6225-Android-Playground" />
 <remote name="tapas-playground-gitlab" fetch="https://gitlab.com/Masood-J" />
+<remote name="rexons-aosp" fetch="git@github.com:Rexons-AOSP-Projects" />
     
 <!-- Device Sources -->
 <project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tapas-playground" revision="16" />
@@ -12,7 +13,7 @@
 
 
 <!-- LOS Hardware Stuff -->
-<project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="tapas-playground" revision="lineage-23.2" />
+<project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="rexons-aosp" revision="lineage-23.2" />
 <remove-project path="hardware/qcom-caf/common" />
 <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="tapas-playground" revision="16" >
     <!-- add guard for AOSP hardware/qcom dir -->
@@ -59,7 +60,7 @@
 <project path="hardware/qcom-caf/sm6225/media" name="android_hardware_qcom-caf_sm6225_media" remote="tapas-playground" revision="16.2" />
 
 <!-- Dolby & MiCam -->
-<project path="hardware/dolby" name="android_hardware_dolby" remote="tapas-playground" revision="lunaris" />
+<project path="hardware/dolby" name="android_hardware_dolby" remote="rexons-aosp" revision="lunaris" />
 <project path="device/xiaomi/tapas-miuicamera" name="android_device_xiaomi_tapas-miuicamera" remote="tapas-playground-ssh" revision="16" />
 <project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="tapas-playground-gitlab" revision="16" />
     
